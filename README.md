@@ -17,7 +17,7 @@ Make sure you have Python installed on your machine. You can download it from py
 #Installation
 1. Clone the repository:
 
-git clone https://github.com/nkateko75/Python-Financial-calculator/finance culculator.py
+git clone https://github.com/nkateko75/Python-Financial-calculator
 
 3. Navigate to the project directory:
 
