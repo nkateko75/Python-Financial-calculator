@@ -15,8 +15,10 @@ These instructions will help you set up and run the financial calculators progra
 Make sure you have Python installed on your machine. You can download it from python.org. / orinstall it on visual studio
 
 #Installation
- 1. Clone the repository:
+1. Clone the repository:
 git clone https://github.com/yourusername/financial-calculators.git
-Navigate to the project directory:
+git clone https://github.com/nkateko75/Python-Financial-calculator/
+
+3. Navigate to the project directory:
 
 cd Financial-calculator
