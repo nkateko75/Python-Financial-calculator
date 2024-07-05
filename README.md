@@ -43,14 +43,14 @@ The bond calculator computes the monthly repayments on a home loan based on:
 
 #Example 
 -Prompting for Inputs
-Choose either 'investment' or 'bond' from the menu below to proceed:
-investment - to calculate the amount of money you will earn on interest.
-bond - to calculate the amount of money you will have to repay on a home loan.
-investment
-Please enter the amount of money that you want to deposit / invest: 1000
-Please enter the interest rate (as percentage. NB! only enter the number): 5
-Please enter the number of years you plan on investing for: 10
-Do you want either “simple” or “compound" interest? compound
+- Choose either 'investment' or 'bond' from the menu below to proceed:
+- investment - to calculate the amount of money you will earn on interest.
+- bond - to calculate the amount of money you will have to repay on a home loan.
+- investment
+- Please enter the amount of money that you want to deposit / invest: 1000
+- Please enter the interest rate (as percentage. NB! only enter the number): 5
+- Please enter the number of years you plan on investing for: 10
+- Do you want either “simple” or “compound" interest? compound
 
 -Output
-The total amount that you will receive after 10 years is: 1628.894626777442
+-The total amount that you will receive after 10 years is: 1628.894626777442
