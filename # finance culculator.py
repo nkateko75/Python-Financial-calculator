@@ -1,60 +1,48 @@
-# Financial Calculator
-import math
+import math# Importing Math
+
 
 # Investment calculator
 def investment_calculator():
-    try:
-        P = float(input("Please enter the amount of money that you want to deposit / invest: "))
-        rate = float(input("Please enter the interest rate (as percentage. NB! only enter the number): "))
-        t = int(input("Please enter the number of years you plan on investing for: "))
-        interest = input('Do you want either "simple" or "compound" interest? ').lower()
+    P = float(input("Please enter the amount of money that you want to deposit / invest: "))  # ‘P’ is the amount that the user deposits.
+    rate = float(input("Please enter the interest rate (as percentage. NB! only enter the number): "))  # ‘r’ is the interest entered divided by 100, e.g. if 8% is entered, then r is 0.08.
+    t = int(input("Please enter the number of years you plan on investing for: "))  # ‘t’ is the number of years that the money is being invested for.
+    interest = str(input('Do you want either “simple” or “compound" interest? ')).lower()
 
-        r = rate / 100
-        if interest == "simple":
-            A = P * (1 + r * t)
-        elif interest == "compound":
-            A = P * math.pow((1 + r), t)
-        else:
-            print("The option selected is invalid, please enter either 'compound' or 'simple'")
-            return investment_calculator()  # Recursive call to ensure it stays in the investment calculator until valid input
+    r = rate / 100
+    if interest == "simple":  # calculates simple interest
+        A = P * (1 + r * t)
+    elif interest == "compound":  # calculates compound interest
+        A = P * math.pow((1 + r), t)
+    else:
+        print("The option selected is invalid, please enter either 'compound' or 'simple'")
+        return  # Exit the function if an invalid option is entered
 
-        print(f"The total amount that you will receive after {t} years is: {A}")
-
-    except ValueError:
-        print("Invalid input! Please enter numerical values for the amount, interest rate, and number of years.")
-        investment_calculator()  # Recursive call to handle invalid inputs
+    print(f"The total amount that you will receive after {t} years is: {A}")  # The variables in {} will be formatted and read as strings
 
 # Bond calculator
 def bond_calculator():
-    try:
-        P = float(input("Please enter the current value of the house: "))
-        i = float(input("Please enter the interest rate: "))
-        n = int(input("Please enter the number of months over which you will repay the bond: "))
-        i = (i / 100) / 12
+    P = float(input("Please enter the current value of the house: "))
+    i = float(input("Please enter the interest rate: "))
+    n = int(input("Please enter the number of months over which you will repay the bond: "))
+    i = (i / 100) / 12  # Yearly interest rate divided into months
 
-        repayment = (i * P) / (1 - math.pow((1 + i), -n))
-        print(f"The total amount that you will pay monthly will be: {repayment}")
+    repayment = (i * P) / (1 - math.pow((1 + i), -n))  # calculates the monthly repayment
+    print(f"The total amount that you will pay monthly will be: {repayment}")  # The variables in {} will be formatted and read as strings
 
-    except ValueError:
-        print("Invalid input! Please enter numerical values for the house value, interest rate, and number of months.")
-        bond_calculator()  # Recursive call to handle invalid inputs
-
-# Main function
+# This is the Main Function
 def main_func():
-    print("Choose either 'investment' or 'bond' from the menu below to proceed:")
-    print("investment - to calculate the amount of money you will earn on interest.")
-    print("bond - to calculate the amount of money you will have to repay on a home loan.")
+    print("Choose either 'investment' or 'bond' from the menu below to proceed:")  # Prompt user to choose between the two options
+    print("investment - to calculate the amount of money you will earn on interest.")  # Explains what is investment
+    print("bond - to calculate the amount of money you will have to repay on a home loan.")  # Explains what is a bond
 
-    choice = input().lower()
+    choice = input().lower()  # Changes cases to lowercase
 
-    if choice == 'investment':
-        investment_calculator()
-    elif choice == 'bond':
-        bond_calculator()
+    if choice == 'investment':  # Checks if choice is investment
+        investment_calculator()  # calls the investment_calculator function
+    elif choice == 'bond':  # Check if choice is bond
+        bond_calculator()  # calls the bond_calculator function
     else:
-        print("The option selected is invalid, enter either 'investment' or 'bond'")
-        main_func()  # Recursive call to handle invalid inputs
+        print("The option selected is invalid, enter either 'investment' or 'bond'")  # Return this message if choice entered is invalid
 
 # Start the program
-main_func()
-d
+main_func()  # calls the main function  and start the program
