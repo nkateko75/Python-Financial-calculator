@@ -1,5 +1,4 @@
-import math
-
+import math # Importing the maths function
 # Investment calculator
 def investment_calculator():
     try:
