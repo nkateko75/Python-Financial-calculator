@@ -17,8 +17,8 @@ This Python script provides two main financial calculators: an Investment Calcul
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/investment-bond-calculator.git
-    cd investment-bond-calculator
+    git clone [https://github.com/nkateko75/Python-Financial-calculator]
+    cd Python-Financial-calculator
     ```
 
 2. **Run the script**:
