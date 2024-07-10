@@ -81,4 +81,4 @@ def main_func():
         print("The option selected is invalid, enter either 'investment' or 'bond'")  # Return this message if choice entered is invalid
 
 # Start the program
-main_func()
+main_func()  # calls the main function  and start the program
