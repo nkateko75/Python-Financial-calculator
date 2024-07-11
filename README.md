@@ -23,5 +23,16 @@ Upon running the script, you will be prompted to choose between calculating inve
 - **Number of Years**: Enter the number of years you plan to invest for.
 - **Interest Type**: Choose between 'simple' or 'compound' interest.
 
-###Example1: Investment with compound iterest
-![image](https://github.com/nkateko75/Python-Financial-calculator/assets/169161209/a060034b-68ae-4c5f-879a-2e2e71c89c7b)
+##Example 1: Investment with compound interest
+![image](https://github.com/nkateko75/Python-Financial-calculator/assets/169161209/7953f56c-cd7d-43b2-b7af-412f992d0675)
+
+
+##Example 2: Investment with simple interest
+![image](https://github.com/nkateko75/Python-Financial-calculator/assets/169161209/538e68ec-1d53-4859-a797-945a92d40a32)
+
+
+### Bond Calculator
+
+##Example 3:
+![image](https://github.com/nkateko75/Python-Financial-calculator/assets/169161209/e73567fc-e0e2-466a-944a-fee376b36ec2)
+
