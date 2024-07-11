@@ -37,7 +37,6 @@ Upon running the script, you will be prompted to choose between calculating inve
 - Convert the annual interest rate to a monthly rate.
 - Calculate the monthly repayment amount using the bond repayment formula.
 
-  
-##Example 3:
+###Example 3:
 ![image](https://github.com/nkateko75/Python-Financial-calculator/assets/169161209/e73567fc-e0e2-466a-944a-fee376b36ec2)
 
